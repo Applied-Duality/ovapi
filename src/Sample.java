@@ -19,7 +19,6 @@ public class Sample {
 
             GtfsRealtime.FeedMessage alerts = GtfsRealtime.FeedMessage.parseFrom(
                     new URL("http://gtfs.ovapi.nl/nl/alerts.pb").openStream(), registry);
-            System.out.println(alerts.getHeader());
             System.out.println(alerts);
 
             Object updates = GtfsRealtime.FeedMessage.parseFrom(
